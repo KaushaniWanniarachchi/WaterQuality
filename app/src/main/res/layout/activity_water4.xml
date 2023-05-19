@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Water4Activity"
+    android:orientation="vertical"
+    android:background="@drawable/backg"
+    android:gravity="center_vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/save_lo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="SAVE LOCATION"
+                android:textColor="#1565C0"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
+
+
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:id="@+id/History"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:text="How to save"
+                        android:textColor="#064A80"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,TextSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/how_to_save"
+                        android:layout_width="336dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:autofillHints=""
+                        android:hint="Home water"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+
+                    <TextView
+                        android:layout_width="231dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Street Address"
+                        android:textColor="#064A80"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,TextSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="336dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:autofillHints=""
+                        android:hint="No521,Suhada Road,Kochchikade"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Town/City"
+                        android:textColor="#064A80"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+                    <EditText
+                        android:id="@+id/location"
+                        android:layout_width="336dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:autofillHints=""
+                        android:hint="Colombo"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+                    <Button
+                        android:id="@+id/Submit"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginTop="75sp"
+                        android:backgroundTint="#3887C6"
+                        android:fontFamily="serif"
+                        android:text="save Result"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

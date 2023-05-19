@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My app</string>
+    <string name="water_quality">Water_quality</string>
+    <string name="_0748569245">0748569245</string>
+    <string name="email_address">email_address</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="fernando">Fernando</string>
+    <string name="personal_details">Personal_Details</string>
+    <string name="register_here">Register_here</string>
+    <string name="Username">Username</string>
+    <string name="nimal_123">Nimal_123</string>
+    <string name="view_history">View History</string>
+    <string name="final_result">Final Result</string>
+    <string name="good_poor_bad">good/poor/bad</string>
+    <string name="location">Location</string>
+    <string name="tds_value">TDS Value</string>
+    <string name="turbidity_value">Turbidity Value</string>
+    <string name="Water_Quality">Water Quality</string>
+    <string name="Register_here">Register here</string>
+    <string name="e_mail_address">E-mail Address*</string>
+    <string name="Personal_Details">Personal Details</string>
+</resources>

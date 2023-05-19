@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Water0Activity"
+    android:orientation="vertical"
+    android:background="@drawable/backg"
+    android:gravity="center_vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/switch_tumbs"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/Result"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/switch_trcks"
+                    android:fontFamily="serif"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/final_result"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/viewHistory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/view_history"
+                    android:textAlignment="center"
+                    android:textColor="@color/BlueColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/FinalreLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="25dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/final_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/final_result"
+                        android:textColor="#064A80"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:focusable="false"
+                    android:id="@+id/final_re"
+                    android:layout_width="189dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="Good/Poor/Bad"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:textColorHint="#546E7A"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck" />
+
+                <RelativeLayout
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:id="@+id/TDS_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/tds_value"
+                            android:textColor="#064A80"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Turbidity_value"
+                            android:layout_width="207dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/turbidity_value"
+                            android:textColor="#064A80"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:ignore="UselessParent">
+
+                    <EditText
+                        android:focusable="false"
+                        android:id="@+id/tds"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="tds value"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck" />
+
+
+                    <EditText
+                        android:focusable="false"
+                        android:id="@+id/turbidity"
+                        android:layout_width="157dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="turbidity value"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck" />
+                </LinearLayout>
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/save_location_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10sp"
+                    android:backgroundTint="#3887C6"
+                    android:fontFamily="serif"
+                    android:text="Save Location"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Historylayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="UselessParent"
+                android:visibility="gone">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_300sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                  >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:text="Saving Type"
+                        android:textColor="#064A80"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+                    <EditText
+                        android:id="@+id/saving_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:hint="Home Water"
+                        android:inputType="textPersonName"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:textColorHint="#757575"
+                        tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/History_Btn"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10sp"
+                        android:backgroundTint="#3887C6"
+                        android:fontFamily="serif"
+                        android:text="View History"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+                    <RelativeLayout
+                        android:layout_width="296dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="47dp">
+
+                            <TextView
+                                android:layout_width="158dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10sp"
+                                android:text="Turbidity Value"
+                                android:textColor="#064A80"
+                                android:textSize="20sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10sp"
+                                android:text="TDS Value"
+                                android:textColor="#064A80"
+                                android:textSize="20sp"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="296dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/values"
+                            android:layout_width="match_parent"
+                            android:layout_height="47dp">
+
+                            <EditText
+                                android:id="@+id/turSensor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:autofillHints=""
+                                android:hint="@string/turbidity_value"
+                                android:inputType="textPersonName"
+                                android:minHeight="48dp"
+                                android:padding="5dp"
+                                android:textColorHint="#546E7A"
+                                tools:ignore="VisualLintTextFieldSize,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+                            <EditText
+                                android:id="@+id/tdsSensor"
+                                android:layout_width="161dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="45dp"
+                                android:hint="TDS value"
+                                android:inputType="text"
+                                android:minHeight="48dp"
+                                android:padding="5dp"
+                                android:textColorHint="#546E7A"
+                                tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:text="Final Result"
+                        android:textColor="#064A80"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+                    <EditText
+                        android:id="@+id/finalll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/good_poor_bad"
+                        android:inputType="number"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="Autofill,VisualLintTextFieldSize" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:text="@string/location"
+                        android:textColor="#064A80"
+                        android:textSize="20sp" />
+                    <EditText
+                        android:id="@+id/negombo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Negombo"
+                        android:inputType="textWebEmailAddress"
+                        android:minHeight="48dp"
+                        android:padding="5dp"
+                        android:textColorHint="#546E7A"
+                        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+

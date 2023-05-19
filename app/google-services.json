@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "712178939709",
+    "firebase_url": "https://waterapp-2013c-default-rtdb.firebaseio.com",
+    "project_id": "waterapp-2013c",
+    "storage_bucket": "waterapp-2013c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712178939709:android:5b5d6afbeab5679541f754",
+        "android_client_info": {
+          "package_name": "com.cy.smartsecure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712178939709-7qcj13eatdms0d0c48itpp561khovre5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSDsYjMkbOXLkiAa3MaxRpCNZRDwk-OcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712178939709-7qcj13eatdms0d0c48itpp561khovre5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712178939709:android:d9fd9d82e0d90b4a41f754",
+        "android_client_info": {
+          "package_name": "com.cy.waterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712178939709-7qcj13eatdms0d0c48itpp561khovre5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSDsYjMkbOXLkiAa3MaxRpCNZRDwk-OcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712178939709-7qcj13eatdms0d0c48itpp561khovre5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

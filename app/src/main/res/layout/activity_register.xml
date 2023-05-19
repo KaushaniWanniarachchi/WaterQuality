@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/backg"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/reg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="REGISTRATION"
+                android:textColor="#1565C0"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <TextView
+                android:id="@+id/Already"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reg_text"
+                android:layout_marginStart="55dp"
+                android:text="Already have an account?"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/log_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reg_text"
+                android:layout_marginStart="10sp"
+                android:layout_toRightOf="@id/Already"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:onClick="goToLogin"
+                android:text="@string/login"
+                android:textColor="#071878"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,SpUsage,TextSizeCheck,UsingOnClickInXml" />
+
+            <TextView
+                android:id="@+id/Terms_Conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Already"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:text="Terms &amp; Conditions"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/Privacy_Notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Notice"
+                android:layout_below="@id/Already"
+                android:layout_toRightOf="@id/Terms_Conditions"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="38dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <RelativeLayout
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                tools:ignore="TextSizeCheck">
+
+                <TextView
+                    android:id="@+id/Personal_Details"
+                    android:layout_width="1000dp"
+                    android:layout_height="50dp"
+                    android:text="@string/Personal_Details"
+                    android:textColor="#0A4E85"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+
+            </RelativeLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:id="@+id/Personal_Details_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1sp"
+                            android:text="First Name*"
+                            android:textColor="#064A80"
+                            android:textSize="25sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:id="@+id/First_Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:hint="Nimal"
+                            android:inputType="textPersonName"
+                            android:minHeight="43dp"
+                            android:padding="5dp"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Last Name*"
+                            android:textColor="#064A80"
+                            android:textSize="25sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:id="@+id/Last_Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:hint="@string/fernando"
+                            android:inputType="textPersonName"
+                            android:minHeight="43dp"
+                            android:padding="5dp"
+                            tools:ignore="VisualLintTextFieldSize" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NIC Number*"
+                            android:textColor="#064A80"
+                            android:textSize="25sp"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:id="@+id/NIC_Number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="972312690V"
+                            android:inputType="text"
+                            android:minHeight="43dp"
+                            android:padding="5dp"
+                            android:textColorHint="#757575"
+                            tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile Number*"
+
+                            android:textSize="25sp"
+                            android:textColor="#064A80"
+                            tools:ignore="HardcodedText" />
+
+                        <EditText
+                            android:id="@+id/Mobile_Number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/_0748569245"
+                            android:inputType="number"
+                            android:minHeight="43dp"
+                            android:padding="5dp"
+                            android:textColorHint="#757575"
+                            tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="25sp"
+                            android:textColor="#064A80"
+                            android:text="@string/e_mail_address" />
+
+                        <EditText
+                            android:id="@+id/Email_Address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="nimalfdo18@gmail.com"
+                            android:inputType="textWebEmailAddress"
+                            android:minHeight="43dp"
+                            android:padding="5dp"
+                            android:textColorHint="#757575"
+                            tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="25sp"
+                            android:textColor="#064A80"
+                            android:text="@string/password" />
+
+                        <EditText
+                            android:id="@+id/Password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="nimal_123"
+                            android:inputType="textWebEmailAddress"
+                            android:minHeight="43dp"
+                            android:padding="5dp"
+                            tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize,TextContrastCheck" />
+
+
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:backgroundTint="#3887C6"
+                            android:fontFamily="serif"
+                            android:text="Submit"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="HardcodedText"
+                            android:layout_gravity="center"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>
